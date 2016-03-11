@@ -1,0 +1,126 @@
+// out: ../css/students_m.css, compress: true, strictMath: true
+body {
+    background-color: #F6F6F6;
+}
+a.active,
+.active a {
+    color: #17A2D6;
+}
+.s-header {
+    height: 60px;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E2E2E2;
+    text-align: center;
+    color: #E1E1E1;
+    a {
+        position: relative;
+        line-height: 60px;
+        padding: 0 10px;
+        display: inline-block;
+        color: #636363;
+        &:after {
+            position: absolute;
+            bottom: -1px;
+            content: "";
+            border-bottom: 1px solid transparent;
+        }
+        &.active {
+            color: #17A2D6;
+            &:after {
+                border-bottom-color: #17A2D6;
+            }
+        }
+    }
+    .s-header-title {
+        width: auto;
+        font-size: 16px;
+    }
+    .s-header-left {
+        position: absolute;
+        left: 0px;
+        float: left;
+    }
+    .s-header-right {
+        position: absolute;
+        right: 0px;
+        float: right;
+    }
+    .s-icon {
+        width: 37px;
+        height: 37px;
+        display: block;
+        margin: 12px 0;
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .s-icon-add {
+        background-image: url('../img/icon/add_on.png');
+    }
+    .s-icon-search {
+        background-image: url('../img/icon/search.png');
+    }
+}
+.am-panel {
+    border-width: 0 0 1px 0;
+    margin-bottom: 15px;
+    .s-card-user {
+        line-height: 60px;
+    }
+    .s-card-content {
+        margin: 10px 0;
+    }
+    .s-card-info {
+        background-color: #F6F6F6;
+        padding: 15px;
+        margin-bottom: 0;
+        dt {
+            font-weight: 400;
+        }
+    }
+    .s-card-media {
+        .am-thumbnails {
+            li {
+                padding-bottom: 0;
+            }
+        }
+        .am-thumbnail {
+            border: 0 none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+    .s-card-status {
+        height: 30px;
+        line-height: 30px;
+        margin: 10px 0 0;
+        overflow: hidden;
+        color: #A0A0A0;
+    }
+    .s-card-comment {
+        display: block;
+        padding-left: 40px;
+        background: url('../img/icon/comment.png') no-repeat left center;
+        background-size: 24px;
+    }
+}
+.am-navbar-default {
+    height: 60px;
+    line-height: 60px;
+    .am-navbar-nav {
+    background-color: #F1F1F1;
+    border-top: 1px solid #c9c9c9;
+    color: #a0a0a0;
+    a {
+        height: 60px;
+        color: #a0a0a0;
+        &.active {
+            color: #17A2D6;
+        }
+        img{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+}
+}
